@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+    
+    <title>CSS3 - 3D Transforms</title>
+    
+    <link href="../dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../dist/js/ie10-viewport-bug-workaround.js" rel="stylesheet">
+    <link href="../dist/css/prettify-min.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <style>
+	.rotateX {
+    -webkit-transform: rotateX(180deg); /* Safari */
+    transform: rotateX(180deg);
+	}	 
+	
+	.rotateY {
+    -webkit-transform: rotateY(120deg); /* Safari */
+    transform: rotateY(120deg);
+	} 
+	
+	.rotateZ {
+	-webkit-transform: rotateZ(90deg); /* Safari */
+    transform: rotateZ(90deg);	
+	}
+	</style>
+    
+</head>
+
+<body>
+<div class="container">
+	<div class="row">
+    	<div class="col-lg-12">
+            <h1 class="page-header">CSS3 3D Transforms</h1>
+        </div>
+    </div>
+    
+    <div class="row">
+    	<div class="col-lg-12">
+            <h3>Overview</h3>
+            <p>Using 3D transformations to transform elements on the X, Y and Z axis.</p>
+            
+            <hr />
+            
+            <h3>Demo</h3> 
+            <ul class="list-inline text-center">
+            	<li><img src="../img/cat-specs.png" class="img-thumbnail rotateX" /> <br />rotateX(180deg)</li>
+                <li><img src="../img/cat-specs.png" class="img-thumbnail rotateY" /> <br />rotateY(120deg)</li>
+                <li><img src="../img/cat-specs.png" class="img-thumbnail rotateZ" /> <br />rotateZ(90deg)</li>
+            </ul>
+            <hr />
+            
+            <h3>Code</h3>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#html" aria-controls="html" role="tab" data-toggle="tab">html</a></li>
+                <li role="presentation"><a href="#css" aria-controls="css" role="tab" data-toggle="tab">CSS</a></li>
+            </ul>
+            
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="html">
+                	<p><pre class="code prettyprint">&lt;img src="../../img/cat-specs.png" class="img-thumbnail rotateX" /&gt;
+&lt;img src="../../img/cat-specs.png" class="rotateY" /&gt;
+&lt;img src="../../img/cat-specs.png" class="rotateZ" /&gt;</pre></p>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="css">
+                	<p><pre class="code prettyprint">.rotateX {
+-webkit-transform: rotateX(180deg); /* Safari */
+transform: rotateX(180deg);
+}	 
+
+.rotateY {
+-webkit-transform: rotateY(120deg); /* Safari */
+transform: rotateY(120deg);
+} 
+
+.rotateZ {
+-webkit-transform: rotateZ(90deg); /* Safari */
+transform: rotateZ(90deg);	
+}</pre></p>
+                </div>
+            </div> 
+            
+        </div>
+    </div>
+    
+</div>
+</body>
+</html>
+<script src="../dist/js/jquery-3.1.1.js"></script>
+<script src="../dist/js/bootstrap.min.js"></script>
+<script src="../dist/js/ie10-viewport-bug-workaround.js"></script>
+<script src="../dist/js/prettify-min.js"></script>
+<script>prettyPrint();</script>
